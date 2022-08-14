@@ -23,6 +23,9 @@ const Header = () => {
   };
   return (
     <Nav style={styles.Nav}  className="justify-content-end me-auto" expand="lg">
+      <Nav.Item style={styles.NavLink} className="justify-content-end me-auto" >
+        Communiteam
+      </Nav.Item>
       <Nav.Item>
         <Nav.Link style={styles.NavLink} as={Link} to="/">
           Home
