@@ -5,8 +5,6 @@ import { LOGIN_USER } from ""../utils/mutations";
 import "../styles/login.css";
 import Auth from ""../utils/auth";
 
-
-
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: "", password: "" });
   const [login, { error, data }] = useMutation(LOGIN_USER);
@@ -55,7 +53,11 @@ const Login = (props) => {
               </p>
             ) : (
               <form className="align-items-center " onSubmit={handleFormSubmit}>
-
+                <div class="container">
+                  <div class="kpx_login">
+                    <h3 class="kpx_authTitle">
+                      Login or <a href="#">Sign up</a>
+                    </h3>
               </form>
             )}
 
