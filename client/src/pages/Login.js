@@ -106,7 +106,22 @@ const Login = (props) => {
                             <i class="fa fa-sign-in"></i> Login
                           </button>
                       </div>
-                                                            
+                      </form>
+                      </div>
+
+                    </div>
+                    <div class="row kpx_row-sm-offset-3">
+                      <div class="">
+                        <label class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            value="remember-me"
+                          />
+                          <span class="custom-control-indicator"></span>
+
+                        </label>
+                      </div>                                                            
               </form>
             )}
 
