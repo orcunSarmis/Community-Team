@@ -66,6 +66,32 @@ const Login = (props) => {
                           autocomplete="off"
                           method="POST"
                         >
+                        <h6>Username</h6>
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <span class="fa fa-user"></span>
+                    </span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="username"
+                    />
+                  </div>
+                  <p class="mt-2 small">
+                            You can you your username, mobile number, or emial
+                            address
+                          </p>
+                          <h6>Password</h6>
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <span class="fa fa-key"></span>
+                            </span>
+                            <input
+                              type="password"
+                              class="form-control"
+                              name="password"
+                            />
+                    </div>                  
               </form>
             )}
 
