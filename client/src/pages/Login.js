@@ -59,86 +59,86 @@ const Login = (props) => {
                       Login or <a href="#">Sign up</a>
                     </h3>
                     <div class="row kpx_row-sm-offset-3">
-                      <div class="">
-                        <form
-                          class="kpx_loginForm"
-                          action=""
-                          autocomplete="off"
-                          method="POST"
-                        >
-                        <h6>Username</h6>
-                  <div class="input-group">
-                    <span class="input-group-addon">
-                      <span class="fa fa-user"></span>
-                    </span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="username"
-                    />
-                  </div>
-                  <p class="mt-2 small">
-                            You can you your username, mobile number, or emial
-                            address
-                          </p>
-                          <h6>Password</h6>
-                          <div class="input-group">
-                            <span class="input-group-addon">
-                              <span class="fa fa-key"></span>
-                            </span>
-                            <input
-                              type="password"
-                              class="form-control"
-                              name="password"
-                            />
-                    </div>
-                    <span class="custom-control-description">
-                        <input type="checkbox" /> Keep me signed in
-                    </span>
-                    <div class=" d-flex justify-content-between">
-                        <p class="kpx_forgotPwd">
-                          <a href="#">Forgot your login in details?</a>
-                        </p>
-                          <button
-                            class="loginbtn btn btn-lg btn-primary "
-                            type="submit"
-                          >
-                            <i class="fa fa-sign-in"></i> Login
-                          </button>
-                      </div>
-                      </form>
-                      </div>
-
-                    </div>
-                    <div class="row kpx_row-sm-offset-3">
-                      <div class="">
-                        <label class="custom-control custom-checkbox">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            value="remember-me"
-                          />
-                          <span class="custom-control-indicator"></span>
-
-                        </label>
-                      </div>
-                      <div class="text-center">
-
-                        <p class="small text-lg-center text-md-center text-sm-center text-xs-center">
-                          Dont't have a My Community Directory account
-                        </p>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>                                                                                  
-              </form>
-            )}
-
-            {error && (
-              <div className="my-3 p-3 bg-danger text-white">
-                {error.message}
+              <div class="">
+              <form
+                class="kpx_loginForm"
+                action=""
+                autocomplete="off"
+                method="POST"
+              >
+              <h6>Username</h6>
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <span class="fa fa-user"></span>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="username"
+                />
               </div>
+              <p class="mt-2 small">
+                  You can you your username, mobile number, or emial
+                  address
+              </p>
+              <h6>Password</h6>
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <span class="fa fa-key"></span>
+                </span>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                />
+              </div>
+              <span class="custom-control-description">
+                  <input type="checkbox" /> Keep me signed in
+              </span>
+              <div class=" d-flex justify-content-between">
+              <p class="kpx_forgotPwd">
+                <a href="#">Forgot your login in details?</a>
+              </p>
+              <button
+                class="loginbtn btn btn-lg btn-primary "
+                type="submit"
+              >
+                <i class="fa fa-sign-in"></i> Login
+              </button>
+                </div>
+                </form>
+              </div>
+
+              </div>
+              <div class="row kpx_row-sm-offset-3">
+              <div class="">
+                <label class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    value="remember-me"
+                  />
+                  <span class="custom-control-indicator"></span>
+
+                </label>
+              </div>
+              <div class="text-center">
+
+              <p class="small text-lg-center text-md-center text-sm-center text-xs-center">
+                Dont't have a My Community Directory account
+              </p>
+
+                </div>
+              </div>
+            </div>
+          </div>                                                                                  
+        </form>
+      )}
+
+          {error && (
+            <div className="my-3 p-3 bg-danger text-white">
+              {error.message}
+            </div>
             )}
           </div>
         </div>
