@@ -9,8 +9,10 @@ const Home = () => {
     <main>
       <div className="">
         <div className="" style={{position:'relative'}}>
-          
+        <div className="" style={{position:'absolute'}}>
+          <img src={Img2} className="w-100" alt="" />
         </div>
+        
       </div>
     </main>
 
