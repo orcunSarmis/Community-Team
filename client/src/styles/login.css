@@ -103,3 +103,24 @@ a:hover {
 	margin-top: 0px !important;
 	margin-bottom: 0px !important;
 }
+.card{
+    width: 400px;
+    margin: 0 auto;
+  }
+  .kpx_row-sm-offset-3{
+    justify-content: center;
+  }
+  .input-group{
+    position: relative;
+  }
+  .input-group-addon{
+    left: 10px;
+    z-index: 2;
+    position: absolute;
+    top: 7px;
+    color: gray;
+  }
+  .form-control{
+    padding-left: 2rem !important;
+  }
+  
