@@ -1,4 +1,3 @@
-
 /*
     @hiercelik - hiercelik.net
     @koalapix - koalapix.com
@@ -26,3 +25,21 @@ a:hover {
     text-align: center;
     line-height: 300%;
 }
+.kpx_login .kpx_socialButtons a {
+    color: white; 
+	opacity:0.9;
+}
+.kpx_login .kpx_socialButtons a:hover {
+    color: white;
+	opacity:1;    	
+}
+.iconsocial{
+  width: 70px;
+}
+
+.kpx_login .kpx_socialButtons .kpx_btn-facebook {background: #3b5998; -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+         transition: all 0.5s ease-in-out;}
+.kpx_login .kpx_socialButtons .kpx_btn-facebook:hover {background: #172d5e}
+.kpx_login .kpx_socialButtons .kpx_btn-facebook:focus {background: #fff; color:#3b5998; border-color: #3b5998;}
