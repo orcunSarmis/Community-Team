@@ -121,7 +121,17 @@ const Login = (props) => {
                           <span class="custom-control-indicator"></span>
 
                         </label>
-                      </div>                                                            
+                      </div>
+                      <div class="text-center">
+
+                        <p class="small text-lg-center text-md-center text-sm-center text-xs-center">
+                          Dont't have a My Community Directory account
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>                                                                                  
               </form>
             )}
 
