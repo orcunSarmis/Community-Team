@@ -151,4 +151,15 @@ a:hover {
 .loginbtn{
   border-radius: 30px !important;
 }
-  
+@media (min-width: 768px) {
+    .kpx_login .kpx_forgotPwd {
+        text-align: left;
+		margin-top:10px;
+    font-size: 15px;
+ 	}		
+}
+@media  (max-width: 360px){
+  .card{
+    width: 330px;
+  }
+} 
