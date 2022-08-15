@@ -58,6 +58,14 @@ const Login = (props) => {
                     <h3 class="kpx_authTitle">
                       Login or <a href="#">Sign up</a>
                     </h3>
+                    <div class="row kpx_row-sm-offset-3">
+                      <div class="">
+                        <form
+                          class="kpx_loginForm"
+                          action=""
+                          autocomplete="off"
+                          method="POST"
+                        >
               </form>
             )}
 
