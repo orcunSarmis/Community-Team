@@ -91,7 +91,22 @@ const Login = (props) => {
                               class="form-control"
                               name="password"
                             />
-                    </div>                  
+                    </div>
+                    <span class="custom-control-description">
+                        <input type="checkbox" /> Keep me signed in
+                    </span>
+                    <div class=" d-flex justify-content-between">
+                        <p class="kpx_forgotPwd">
+                          <a href="#">Forgot your login in details?</a>
+                        </p>
+                          <button
+                            class="loginbtn btn btn-lg btn-primary "
+                            type="submit"
+                          >
+                            <i class="fa fa-sign-in"></i> Login
+                          </button>
+                      </div>
+                                                            
               </form>
             )}
 
