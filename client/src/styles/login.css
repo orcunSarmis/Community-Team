@@ -57,3 +57,17 @@ a:hover {
          transition: all 0.5s ease-in-out;}
 .kpx_login .kpx_socialButtons .kpx_btn-google-plus:hover {background: #6b1301}
 .kpx_login .kpx_socialButtons .kpx_btn-google-plus:focus {background: #fff; color: #c32f10; border-color: #c32f10}
+
+.kpx_login .kpx_socialButtons .kpx_btn-linkedin {background: #0976b4; -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+         transition: all 0.5s ease-in-out;}
+.kpx_login .kpx_socialButtons .kpx_btn-linkedin:hover {background: #004269}
+.kpx_login .kpx_socialButtons .kpx_btn-linkedin:focus {background: #fff; color: #0976b4; border-color: #0976b4}
+
+.kpx_login .kpx_socialButtons .kpx_btn-windows {background:#2050a9 ; -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+         transition: all 0.5s ease-in-out;}
+.kpx_login .kpx_socialButtons .kpx_btn-windows:hover {background: #0976b4}
+.kpx_login .kpx_socialButtons .kpx_btn-windows:focus {background: #fff; color: #0976b4; border-color: #0976b4}
