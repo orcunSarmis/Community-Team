@@ -138,4 +138,17 @@ a:hover {
   background-size: cover;
   height: 100vh;
 }
+.kpx_login .kpx_loginForm .input-group.i {
+	width: 2em;
+}
+.kpx_login .kpx_loginForm  .help-block {
+    color: red;
+}
+.custom-control-description{
+  margin-top: 1rem;
+  display: block;
+}
+.loginbtn{
+  border-radius: 30px !important;
+}
   
