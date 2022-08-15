@@ -71,3 +71,17 @@ a:hover {
          transition: all 0.5s ease-in-out;}
 .kpx_login .kpx_socialButtons .kpx_btn-windows:hover {background: #0976b4}
 .kpx_login .kpx_socialButtons .kpx_btn-windows:focus {background: #fff; color: #0976b4; border-color: #0976b4}
+
+.kpx_login .kpx_socialButtons .kpx_btn-stumbleupon {background: #eb4924; -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+         transition: all 0.5s ease-in-out;}
+.kpx_login .kpx_socialButtons .kpx_btn-stumbleupon:hover {background: #943019}
+.kpx_login .kpx_socialButtons .kpx_btn-stumbleupon:focus {background: #fff; color: #eb4924; border-color: #eb4924}
+
+.kpx_login .kpx_socialButtons .kpx_btn-tumblr {background: #35465c; -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+         transition: all 0.5s ease-in-out;}
+.kpx_login .kpx_socialButtons .kpx_btn-tumblr:hover {background: #142030}
+.kpx_login .kpx_socialButtons .kpx_btn-tumblr:focus {background: #fff; color: #35465c; border-color: #35465c}
