@@ -12,7 +12,9 @@ const Home = () => {
         <div className="" style={{position:'absolute'}}>
           <img src={Img2} className="w-100" alt="" />
         </div>
-        
+        <div className="" style={{position:'absolute', width:'100%', top:'10rem', textAlign:'center', background:'#201919c4', color:'white'}}>
+        <h1>Everthing you need local is <span style={{color:'#a7a376'}}>a click away</span></h1>
+        </div>
       </div>
     </main>
 
