@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
-import { LOGIN_USER } from '../utils/mutations';
-
-import Auth from '../utils/auth';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useMutation } from "@apollo/client";
+import { LOGIN_USER } from ""../utils/mutations";
+import "../styles/login.css";
+import Auth from ""../utils/auth";
 
 
 
 const Login = (props) => {
-  const [formState, setFormState] = useState({ email: '', password: '' });
+  const [formState, setFormState] = useState({ email: "", password: "" });
   const [login, { error, data }] = useMutation(LOGIN_USER);
 
   // update state based on form input changes
@@ -37,16 +37,16 @@ const Login = (props) => {
 
     // clear form values
     setFormState({
-      email: '',
-      password: '',
+      email: "",
+      password: "",
     });
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
-      <div className="col-12 col-lg-10 ">
-        <div className="card mt-5">
-          <h4 className="card-header bg-dark text-light p-2 p-sm-3">Login</h4>
+    <main className="flex-row justify-center imgepic">
+      <div className="col-12 col-lg-8 mx-auto my-0">
+        <div className="card">
+          
           <div className="card-body align-items-center">
             {data ? (
               <p>
