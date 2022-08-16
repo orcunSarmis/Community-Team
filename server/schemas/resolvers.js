@@ -1,6 +1,6 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { User } = require('../models');
-const Community = require('../models/Community');
+const  Community  = require('../models/Community');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -16,6 +16,9 @@ const resolvers = {
     },
     communities: async () => {
       return Community.find();
+    },
+    commmunity: async (parent, args) => {
+      return Community.findOne({ _id: parent.commmunity});
     }
   },
 
