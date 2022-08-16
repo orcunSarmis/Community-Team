@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import BG from "../img/img3.jpg";
 
-import { useMutation } from '@apollo/client';
-import { ADD_USER } from '../utils/mutations';
+import { useMutation } from "@apollo/client";
+import { ADD_USER } from "../utils/mutations";
 
-import Auth from '../utils/auth';
+import Auth from "../utils/auth";
 
 const Signup = () => {
   const [formState, setFormState] = useState({
@@ -39,49 +40,106 @@ const Signup = () => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
-      <div className="col-12 col-lg-10">
+    <main className="flex-row justify-center position-relative">
+      <div className="position-absolute">
+        <img src={BG} class="img-fluid " alt="Responsive image"></img>
+      </div>
+      <div className="col-12 col-md-10 pt-5 col-lg-10 w-50 mx-auto my-0">
         <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
-          <div className="card-body">
+          
+          <div className="card-body d-flex">
             {data ? (
               <p>
-                Success! You may now head{' '}
+                Success! You may now head{" "}
                 <Link to="/">back to the homepage.</Link>
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>
-                <input
-                  className="form-input"
-                  placeholder="Your username"
-                  name="username"
-                  type="text"
-                  value={formState.name}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="Your email"
-                  name="email"
-                  type="email"
-                  value={formState.email}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="******"
-                  name="password"
-                  type="password"
-                  value={formState.password}
-                  onChange={handleChange}
-                />
-                <button
-                  className="btn btn-block btn-primary"
-                  style={{ cursor: 'pointer' }}
-                  type="submit"
-                >
-                  Submit
-                </button>
+                <div class="container">
+                  <div class="kpx_login">
+                    <h3 class="kpx_authTitle">
+                    <a href="Login">Login</a> or Sign up
+                    </h3>
+                    <div class="row kpx_row-sm-offset-3">
+                      <div class="">
+                        <h6>Username</h6>
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <span class="fa fa-user"></span>
+                          </span>
+                          <input
+                            className="form-input mb-2 w-100 rounded py-md-1 px-md-1 py-lg-2 px-lg-4  w-xs-50"
+                            placeholder=""
+                            name="username"
+                            type="text"
+                            value={formState.name}
+                            onChange={handleChange}
+                          />
+                        </div>
+                        {/* <p class=" small">
+                          You can you your username, mobile number, or email
+                          address
+                        </p> */}
+                        <h6>Email</h6>
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <span class="fa fa-user"></span>
+                          </span>
+                          <input
+                            className="form-input mb-2 w-100 rounded py-md-1 px-md-1 py-lg-2 px-lg-4  w-xs-50"
+                            placeholder=""
+                            name="email"
+                            type="email"
+                            value={formState.email}
+                            onChange={handleChange}
+                          />
+                        </div>
+                        <h6>Password</h6>
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <span class="fa fa-key"></span>
+                          </span>
+                          <input
+                            className="form-input rounded w-100 py-md-1 px-md-1 py-lg-2 px-lg-4 w-xs-100"
+                            placeholder=""
+                            name="password"
+                            type="password"
+                            value={formState.password}
+                            onChange={handleChange}
+                          />
+                        </div>
+                        <span class="custom-control-description">
+                          <input type="checkbox" /> Keep me signed in
+                        </span>
+                        <div class=" d-flex justify-content-between">
+                          <p class="kpx_forgotPwd">
+                            <a href="#">Forgot your login in details?</a>
+                          </p>
+                          <button
+                            className="btn btn-block btn-primary"
+                            style={{ cursor: "pointer" }}
+                            type="submit"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row kpx_row-sm-offset-3">
+                      <div class="">
+                        <label class="custom-control custom-checkbox">
+                          <span class="custom-control-indicator"></span>
+                        </label>
+                      </div>
+
+                      <div class="text-center">
+                        <p class="small text-lg-center text-md-center text-sm-center text-xs-center">
+                          Dont't have a My Community Directory account
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </form>
             )}
 
