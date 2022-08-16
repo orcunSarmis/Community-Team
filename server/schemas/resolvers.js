@@ -1,5 +1,6 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { User } = require('../models');
+const Community = require('../models/Community');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -13,6 +14,9 @@ const resolvers = {
       }
       throw new AuthenticationError('You must be signed in');
     },
+    communities: async () => {
+      return Community.find();
+    }
   },
 
   Mutation: {
