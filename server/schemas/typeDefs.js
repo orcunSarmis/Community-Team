@@ -7,6 +7,13 @@ const typeDefs = gql`
     email: String
   }
 
+  type Community {
+    _id: ID
+    name: String
+    location: String
+    users: [User]
+  }
+
   type Auth {
     token: ID!
     user: User
@@ -14,6 +21,7 @@ const typeDefs = gql`
 
   type Query {
     users: [User]
+    communities: [Community]
     me: User
   }
 
