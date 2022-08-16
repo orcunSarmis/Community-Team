@@ -1,0 +1,17 @@
+[
+    {
+        "name": "communitya",
+        "location": "brisbane",
+        "users": "elliot"
+    },
+    {
+        "name": "communityb",
+        "location": "adelaide",
+        "users": "dory"
+    },
+    {
+        "name": "communityc",
+        "location": "sydney",
+        "users": "drew"
+    }
+]
