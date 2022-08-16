@@ -9,3 +9,16 @@ query Me {
   }
 }
 `;
+
+export const QUERY_COMMUNITY= gql`
+query Community {
+  community {
+    __id
+    name
+    location
+    users {
+      name
+    }
+  }
+}
+`
