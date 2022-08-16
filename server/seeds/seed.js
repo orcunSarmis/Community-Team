@@ -2,6 +2,7 @@ const db = require('../config/connection');
 const { User } = require('../models');
 const Community = require('../models/Community');
 const userSeeds = require('./userSeeds.json');
+const communitySeeds = require('./communitySeeds.json');
 
 db.once('open', async () => {
   try {
