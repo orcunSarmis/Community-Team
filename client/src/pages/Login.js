@@ -41,104 +41,97 @@ const Login = (props) => {
   };
 
   return (
-    <main className="flex-row justify-center imgepic">
-      <div className="col-12 col-lg-8 mx-auto my-0">
+    <main className="flex-row justify-center  imgepic">
+      <div className="col-12 pt-5 col-lg-8 mx-auto my-0">
         <div className="card">
-          
-          <div className="card-body align-items-center">
+          <div className="card-body">
             {data ? (
               <p>
                 Success! You may now head{" "}
                 <Link to="/">back to the homepage.</Link>
               </p>
             ) : (
-              <form className="align-items-center " onSubmit={handleFormSubmit}>
+              <form onSubmit={handleFormSubmit}>
                 <div class="container">
                   <div class="kpx_login">
                     <h3 class="kpx_authTitle">
-                      Login or <a href="#">Sign up</a>
+                      Login or <a href="Signup">Sign up</a>
                     </h3>
                     <div class="row kpx_row-sm-offset-3">
-              <div class="">
-              <form
-                class="kpx_loginForm"
-                action=""
-                autocomplete="off"
-                method="POST"
-              >
-              <h6>Username</h6>
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <span class="fa fa-user"></span>
-                </span>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="username"
-                />
-              </div>
-              <p class="mt-2 small">
-                  You can you your username, mobile number, or emial
-                  address
-              </p>
-              <h6>Password</h6>
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <span class="fa fa-key"></span>
-                </span>
-                <input
-                  type="password"
-                  class="form-control"
-                  name="password"
-                />
-              </div>
-              <span class="custom-control-description">
-                  <input type="checkbox" /> Keep me signed in
-              </span>
-              <div class=" d-flex justify-content-between">
-              <p class="kpx_forgotPwd">
-                <a href="#">Forgot your login in details?</a>
-              </p>
-              <button
-                class="loginbtn btn btn-lg btn-primary "
-                type="submit"
-              >
-                <i class="fa fa-sign-in"></i> Login
-              </button>
+                      <div class="">
+                        
+                          <h6>Your Email</h6>
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <span class="fa fa-user"></span>
+                            </span>
+                            <input
+                              className="form-input w-100 rounded py-md-1 px-md-1 py-lg-2 px-lg-4  w-xs-50"
+                              placeholder=""
+                              name="email"
+                              type="email"
+                              value={formState.email}
+                              onChange={handleChange}
+                            />
+                          </div>
+                          <p class="mt-2 small">
+                            You can you your username, mobile number, or email
+                            address
+                          </p>
+                          <h6>Password</h6>
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <span class="fa fa-key"></span>
+                            </span>
+                            <input
+                              className="form-input rounded w-100 py-md-1 px-md-1 py-lg-2 px-lg-4 w-xs-100"
+                              placeholder=""
+                              name="password"
+                              type="password"
+                              value={formState.password}
+                              onChange={handleChange}
+                            />
+                          </div>
+                          <span class="custom-control-description">
+                            <input type="checkbox" /> Keep me signed in
+                          </span>
+                          <div class=" d-flex justify-content-between">
+                            <p class="kpx_forgotPwd">
+                              <a href="#">Forgot your login in details?</a>
+                            </p>
+                            <button
+                              className="btn btn-block btn-primary"
+                              style={{ cursor: "pointer" }}
+                              type="submit"
+                            >
+                              Submit
+                            </button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="row kpx_row-sm-offset-3">
+                      <div class="">
+                        <label class="custom-control custom-checkbox">
+                         
+                          <span class="custom-control-indicator"></span>
+                        </label>
+                      </div>
+
+                      <div class="text-center">
+                        <p class="small text-lg-center text-md-center text-sm-center text-xs-center">
+                          Dont't have a My Community Directory account
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                </form>
+              </form>
+            )}
+
+            {error && (
+              <div className="my-3 p-3 bg-danger text-white">
+                {error.message}
               </div>
-
-              </div>
-              <div class="row kpx_row-sm-offset-3">
-              <div class="">
-                <label class="custom-control custom-checkbox">
-                  <input
-                    type="checkbox"
-                    class="custom-control-input"
-                    value="remember-me"
-                  />
-                  <span class="custom-control-indicator"></span>
-
-                </label>
-              </div>
-              <div class="text-center">
-
-              <p class="small text-lg-center text-md-center text-sm-center text-xs-center">
-                Dont't have a My Community Directory account
-              </p>
-
-                </div>
-              </div>
-            </div>
-          </div>                                                                                  
-        </form>
-      )}
-
-          {error && (
-            <div className="my-3 p-3 bg-danger text-white">
-              {error.message}
-            </div>
             )}
           </div>
         </div>
