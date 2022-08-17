@@ -46,7 +46,38 @@ const Profile = () => {
                     <a href="">{profileData.username}</a>
                   </div>
                   <span>
-
+                    <a href="">
+                      @<span>{profileData._id}</span> - [{profileData.email}]
+                    </a>
+                  </span>
+                </div>
+                <div className="twPc-divStats">
+                  <ul className="twPc-Arrange d-flex justify-content-around">
+                    <li className="twPc-ArrangeSizeFit">
+                      <a href="" title="3 events">
+                        <span className="twPc-StatLabel twPc-block">Events</span>
+                        <span className="twPc-StatValue">3</span>
+                      </a>
+                    </li>
+                    <li className="twPc-ArrangeSizeFit">
+                      <a href="" title="885 Following">
+                        <span className="twPc-StatLabel twPc-block">Following</span>
+                        <span className="twPc-StatValue">885</span>
+                      </a>
+                    </li>
+                    <li className="twPc-ArrangeSizeFit">
+                      <a href="" title="1.810 Followers">
+                        <span className="twPc-StatLabel twPc-block">Followers</span>
+                        <span className="twPc-StatValue">1.810</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
     );
 };
 
