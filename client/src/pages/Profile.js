@@ -26,15 +26,27 @@ const Profile = () => {
 
     return (
         <>
-            <p>Profile Page</p>
-            Id: {profileData._id}
-            <br/>
-            Email: {profileData.email}
-            <br/>
-            Username: {profileData.username}
-            <br/>
-            Community: {profileData.name}
-        </>
+        <p
+          style={{ background: "linear-gradient( 11deg,yellow,green, #811717)" }}
+          className="text-center bg-dark text-white fs-4"
+        >
+          Profile Page
+        </p>
+        <div className="container ">
+          <div className="row">
+            <div className="twPc-div">
+              <div className="twPc-button"></div>
+              <a className="twPc-bg twPc-block"></a>
+              <div>
+                <a title="" href="" className="twPc-avatarLink">
+                  <img alt="" src={ProPic} className="twPc-avatarImg" />
+                </a>
+                <div className="twPc-divUser">
+                  <div className="twPc-divName">
+                    <a href="">{profileData.username}</a>
+                  </div>
+                  <span>
+
     );
 };
 
