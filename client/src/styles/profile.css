@@ -13,3 +13,12 @@ a{
 .container{
     margin-top: 2.2rem;
 }
+.twPc-bg {
+    background-image: url("../img/photo-1553095066-5014bc7b7f2d.jfif");
+    background-position: 0 50%;
+    background-size: 100% auto;
+    border-bottom: 1px solid #e1e8ed;
+    border-radius: 4px 4px 0 0;
+    height: 95px;
+    width: 100%;
+}
