@@ -5,6 +5,7 @@ import { QUERY_COMMUNITY } from '../utils/queries';
 
 const Profile = () => {
     const {loading, data} = useQuery(QUERY_ME);
+    const {} = useQuery(QUERY_COMMUNITY);
 
     if (loading) {
         return (
@@ -15,6 +16,8 @@ const Profile = () => {
     }
 
     const profileData = data?.me || {}
+    // const profileData = data?.community || {}
+
 
     return (
         <>
@@ -24,6 +27,8 @@ const Profile = () => {
             Email: {profileData.email}
             <br/>
             Username: {profileData.username}
+            <br/>
+            Community: {profileData.name}
         </>
     );
 };
