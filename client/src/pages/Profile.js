@@ -1,6 +1,7 @@
 import { useQuery } from '@apollo/client';
 import React from 'react';
 import { QUERY_ME } from '../utils/queries';
+import { QUERY_COMMUNITY } from '../utils/queries';
 
 const Profile = () => {
     const {loading, data} = useQuery(QUERY_ME);

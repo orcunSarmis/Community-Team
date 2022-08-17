@@ -77,8 +77,7 @@ const Signup = () => {
                           />
                         </div>
                         {/* <p class=" small">
-                          You can you your username, mobile number, or email
-                          address
+                          You can use your username
                         </p> */}
                         <h6>Email</h6>
                         <div class="input-group">
