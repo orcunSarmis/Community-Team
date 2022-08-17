@@ -1,17 +1,14 @@
 [
     {
         "name": "communitya",
-        "location": "brisbane",
-        "users": "elliot"
+        "location": "brisbane"
     },
     {
         "name": "communityb",
-        "location": "adelaide",
-        "users": "dory"
+        "location": "adelaide"
     },
     {
         "name": "communityc",
-        "location": "sydney",
-        "users": "drew"
+        "location": "sydney"
     }
 ]

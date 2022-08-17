@@ -119,7 +119,7 @@ const Login = (props) => {
 
                       <div class="text-center">
                         <p class="small text-lg-center text-md-center text-sm-center text-xs-center">
-                          Dont't have a My Community Directory account
+                          Dont't have a CommuniTeam account
                         </p>
                       </div>
                     </div>

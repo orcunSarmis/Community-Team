@@ -19,6 +19,11 @@ const Home = () => {
         </div>
         {/* <img src={Img3} className="w-100" alt="" /> */}
       </div>
+      <div>
+        <p>CommuniTeam exists to help new members to settle down, access the services they need, 
+          meet new people and feel welcome. We want to build bridges and create connections to give 
+          everyone a chance to take an active role in their community</p>
+        </div> 
     </main>  
   );
 };

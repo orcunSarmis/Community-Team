@@ -22,6 +22,7 @@ const typeDefs = gql`
   type Query {
     users: [User]
     communities: [Community]
+    commmunity: Community
     me: User
   }
 

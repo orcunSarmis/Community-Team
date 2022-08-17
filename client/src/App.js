@@ -12,6 +12,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 
 import Header from './components/Header';
+import Communities from './pages/Communities';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -49,6 +50,7 @@ function App() {
               path="/profile" 
               element={<Profile/>}
             />
+            <Route path="/communities" element={<Communities />}/>
             <Route 
               path="/login" 
               element={<Login/>}

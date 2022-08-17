@@ -13,12 +13,22 @@ query Me {
 export const QUERY_COMMUNITY= gql`
 query Community {
   community {
-    __id
+    _id
     name
     location
     users {
       name
     }
+  }
+}
+`;
+
+export const QUERY_COMMUNITIES= gql`
+query Communities {
+  communities {
+    _id
+    name
+    location
   }
 }
 `;
