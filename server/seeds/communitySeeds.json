@@ -10,5 +10,9 @@
     {
         "name": "communityc",
         "location": "sydney"
+    },
+    {
+        "name": "communityd",
+        "location": "melbourne"
     }
 ]

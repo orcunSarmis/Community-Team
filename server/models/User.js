@@ -19,6 +19,15 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
+  location: {
+    type: String,
+    required: false,
+  },
+  community: {
+    type: String,
+    required: false,
+  },
+
   // If your user needs more properties, add them here. Don't forget to add them to the typeDefs.js, resolvers.js and the userSeeds.
 });
 

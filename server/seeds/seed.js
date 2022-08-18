@@ -8,6 +8,8 @@ db.once('open', async () => {
   try {
     await User.deleteMany({});
 
+    await Community.deleteMany({});
+
     await User.create(userSeeds);
 
     await Community.create(communitySeeds);
