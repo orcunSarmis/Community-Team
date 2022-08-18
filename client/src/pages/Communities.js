@@ -1,7 +1,6 @@
 import { useQuery } from "@apollo/client";
 import React from "react";
 import { QUERY_COMMUNITIES } from "../utils/queries";
-import Img3 from "../img/img3.jpg";
 import Img4 from "../img/brisbane.jpg";
 
 const Communities = () => {
