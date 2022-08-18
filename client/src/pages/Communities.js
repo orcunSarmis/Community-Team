@@ -6,12 +6,9 @@ import { QUERY_COMMUNITIES } from "../utils/queries";
 const Communities = () => {
   const { loading, data } = useQuery(QUERY_COMMUNITIES);
   
-
   if (loading) {
     return <>Loading...</>;
   }
-
-
 
   console.log(data);
   const communities = data.communities || [];

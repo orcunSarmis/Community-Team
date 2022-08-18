@@ -3,12 +3,12 @@ import React from 'react';
 import "../styles/profile.css";
 import ProPic from "../img/profile.svg";
 import { QUERY_ME } from '../utils/queries';
-import { QUERY_COMMUNITY } from '../utils/queries';
+import { QUERY_COMMUNITIES } from '../utils/queries';
 
 
 const Profile = () => {
     const {loading, data} = useQuery(QUERY_ME);
-    const {} = useQuery(QUERY_COMMUNITY);
+    // const {loading= loading2, data = data2} = useQuery(QUERY_COMMUNITIES);
 
     if (loading) {
         return (
@@ -19,7 +19,8 @@ const Profile = () => {
     }
 
     const profileData = data?.me || {}
-    // const profileData = data?.community || {}
+    const communities = data.communities || [];
+    
     console.log(profileData._id)
     console.log(profileData.email)
     console.log(profileData.username)
@@ -46,31 +47,31 @@ const Profile = () => {
                     <a href="">{profileData.username}</a>
                   </div>
                   <span>
-                    <a href="">
+                    {/* <a href="">
                       @<span>{profileData._id}</span> - [{profileData.email}]
-                    </a>
+                    </a> */}
                   </span>
                 </div>
                 <div className="twPc-divStats">
                   <ul className="twPc-Arrange d-flex justify-content-around">
                     <li className="twPc-ArrangeSizeFit">
                       <a href="" title="3 events">
-                        <span className="twPc-StatLabel twPc-block">Events</span>
-                        <span className="twPc-StatValue">3</span>
+                        <span className="twPc-StatLabel twPc-block">Location</span>
+                        <span className="twPc-StatValue">Brisbane</span>
                       </a>
                     </li>
                     <li className="twPc-ArrangeSizeFit">
                       <a href="" title="885 Following">
-                        <span className="twPc-StatLabel twPc-block">Following</span>
-                        <span className="twPc-StatValue">885</span>
+                        <span className="twPc-StatLabel twPc-block"></span>
+                        <span className="twPc-StatValue"></span>
                       </a>
                     </li>
-                    <li className="twPc-ArrangeSizeFit">
+                    {/* <li className="twPc-ArrangeSizeFit">
                       <a href="" title="1.810 Followers">
                         <span className="twPc-StatLabel twPc-block">Followers</span>
                         <span className="twPc-StatValue">1.810</span>
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-// import { BiArchive } from "react-icons/bi";
 
 import Auth from '../../utils/auth';
 
@@ -23,7 +22,7 @@ const Header = () => {
   };
   return (
     <Nav style={styles.Nav}  className="justify-content-end me-auto" expand="lg">
-      <Nav.Item style={styles.NavLink} className="justify-content-end me-auto" >
+      <Nav.Item style={styles.NavLink} className=" text-center justify-content-end me-auto" >
         CommuniTeam
       </Nav.Item>
       <Nav.Item>
@@ -31,6 +30,9 @@ const Header = () => {
           Home
         </Nav.Link>
       </Nav.Item>
+      <Nav.Link style={styles.NavLink} as={Link} to="/communities">
+          Communities
+        </Nav.Link>
       <Nav.Item>
         <Nav.Link style={styles.NavLink} as={Link} to="/profile">
           Profile
