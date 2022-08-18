@@ -6,6 +6,8 @@ query Me {
     _id
     username
     email
+    location
+    community
   }
 }
 `;

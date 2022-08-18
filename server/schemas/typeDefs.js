@@ -6,6 +6,7 @@ const typeDefs = gql`
     username: String
     email: String
     location: String
+    community: String
   }
 
   type Community {

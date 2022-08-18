@@ -8,7 +8,7 @@ import { QUERY_COMMUNITIES } from '../utils/queries';
 
 const Profile = () => {
     const {loading, data} = useQuery(QUERY_ME);
-    // const {loading= loading2, data = data2} = useQuery(QUERY_COMMUNITIES);
+    // const {loading: loading2, data: data2} = useQuery(QUERY_COMMUNITIES);
 
     if (loading) {
         return (
@@ -19,11 +19,13 @@ const Profile = () => {
     }
 
     const profileData = data?.me || {}
-    const communities = data.communities || [];
+    // const communities = data.communities || [];
     
     console.log(profileData._id)
     console.log(profileData.email)
     console.log(profileData.username)
+    console.log(profileData.location)
+    console.log(profileData.community)
 
     return (
         <>
@@ -57,13 +59,13 @@ const Profile = () => {
                     <li className="twPc-ArrangeSizeFit">
                       <a href="" title="3 events">
                         <span className="twPc-StatLabel twPc-block">Location</span>
-                        <span className="twPc-StatValue">Brisbane</span>
+                        <span className="twPc-StatValue">{profileData.location}</span>
                       </a>
                     </li>
                     <li className="twPc-ArrangeSizeFit">
                       <a href="" title="885 Following">
-                        <span className="twPc-StatLabel twPc-block"></span>
-                        <span className="twPc-StatValue"></span>
+                        <span className="twPc-StatLabel twPc-block">Community</span>
+                        <span className="twPc-StatValue">{profileData.community}</span>
                       </a>
                     </li>
                     {/* <li className="twPc-ArrangeSizeFit">

@@ -1,6 +1,5 @@
 import { useQuery } from "@apollo/client";
 import React from "react";
-
 import { QUERY_COMMUNITIES } from "../utils/queries";
 
 const Communities = () => {
