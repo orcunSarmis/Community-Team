@@ -23,7 +23,7 @@ const Communities = () => {
      {communities.map((el,index) => {
        return (
      <div key={index} className="card m-0 mt-2 " style={{width: "18rem"}}>
-       <div className="card-body">
+       <div style={{backgroundImage:`url(${Img4})`}} className="card-body">
          <h5 className="card-title">{el.name}</h5>
          <p className="card-text">
          {el.location}
@@ -31,7 +31,7 @@ const Communities = () => {
          <a href="#" className="btn btn-primary">
          Add
          </a>
-        <img src={Img4} style={{borderRadius:"20px"}} className="w-50"/>
+        
        </div>
      </div>
      );
