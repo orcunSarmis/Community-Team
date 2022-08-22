@@ -2,9 +2,12 @@ import { useQuery } from "@apollo/client";
 import React from "react";
 import { QUERY_COMMUNITIES } from "../utils/queries";
 import Img4 from "../img/brisbane.jpg";
+import { useMutation } from "@apollo/client";
+import { ADD_COMMUNITY } from "../utils/mutations";
 
 const Communities = () => {
   const { loading, data } = useQuery(QUERY_COMMUNITIES);
+  const [addCommunity, { error, data: commmunityData }] = useMutation(ADD_COMMUNITY);
   
   if (loading) {
     return <>Loading...</>;
@@ -23,7 +26,7 @@ const Communities = () => {
      {communities.map((el,index) => {
        return (
      <div key={index} className="card m-0 mt-2 " style={{width: "18rem"}}>
-       <div style={{backgroundImage:`url(${Img4})`}} className="card-body">
+       <div style={{ backgroundImage:`url(${Img4})`}} className="card-body">
          <h5 className="card-title">{el.name}</h5>
          <p className="card-text">
          {el.location}

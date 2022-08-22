@@ -12,6 +12,16 @@ mutation AddUser($username: String!, $email: String!, $password: String!) {
   }
 }`
 
+export const ADD_COMMUNITY = gql`
+mutation AddCommunity($name: String!) {
+  addCommunity(name: $name) {
+    community {
+      _id
+     name
+    }
+  }
+}`
+
 export const LOGIN_USER = gql`
 mutation Login($email: String!, $password: String!) {
   login(email: $email, password: $password) {
