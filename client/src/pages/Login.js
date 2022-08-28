@@ -4,6 +4,7 @@ import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../utils/mutations";
 import "../styles/login.css";
 import Auth from "../utils/auth";
+import decode from 'jwt-decode';
 
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: "", password: "" });
@@ -136,6 +137,7 @@ const Login = (props) => {
           </div>
         </div>
       </div>
+      
     </main>
   );
 };

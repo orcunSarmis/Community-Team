@@ -28,6 +28,15 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
+
+    updateUser: async (parent, { _id ,community,location,}) => {
+      let id = new mongoose.Types.ObjectId(_id)
+      const user = await User.findOne({id});
+      console.log(user)
+      const updateUser = await User.updateOne({community,location})
+      const token = signToken(updateUser);
+      return { token,updateUser } ;
+    },
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 
